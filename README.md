@@ -47,7 +47,8 @@ src/
 │   └── Keyboard.tsx
 ├── languages.ts
 ├── utils.ts
-└── AssemblyEndgame.tsx   # main game component
+├── words.ts
+└── App.tsx   # main game component
 ```
 
 ### Prerequisites
@@ -59,7 +60,7 @@ src/
 
 ```bash
 git clone <repository-url>
-cd assembly-endgame
+cd Endgame
 npm install
 ```
 
@@ -82,7 +83,6 @@ npm run build
 - **`currentWord`** — the word to guess, picked randomly via `getRandomWord()`.
 - **`guessedLetters`** — array of letters the player has clicked so far.
 - **`wrongGuessCount`** — derived from `guessedLetters`, counts letters not present in `currentWord`.
-- **`numGuessesLeft`** — based on the number of available languages minus one.
 - **`isGameWon`** / **`isGameLost`** / **`isGameOver`** — derived boolean flags that drive UI state (keyboard disabling, confetti, status messages).
 
 # React + Vite
